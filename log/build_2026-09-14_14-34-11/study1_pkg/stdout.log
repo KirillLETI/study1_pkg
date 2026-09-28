@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/study1_pkg/study1_pkg.egg-info
+writing ../../build/study1_pkg/study1_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/study1_pkg/study1_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/study1_pkg/study1_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/study1_pkg/study1_pkg.egg-info/requires.txt
+writing top-level names to ../../build/study1_pkg/study1_pkg.egg-info/top_level.txt
+writing manifest file '../../build/study1_pkg/study1_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/study1_pkg/study1_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/study1_pkg/study1_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/igsp-01/ros2_3492_ws/build/study1_pkg/build
+creating /home/igsp-01/ros2_3492_ws/build/study1_pkg/build/lib
+creating /home/igsp-01/ros2_3492_ws/build/study1_pkg/build/lib/study1_pkg
+copying study1_pkg/__init__.py -> /home/igsp-01/ros2_3492_ws/build/study1_pkg/build/lib/study1_pkg
+running install
+running install_lib
+creating /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages/study1_pkg
+copying /home/igsp-01/ros2_3492_ws/build/study1_pkg/build/lib/study1_pkg/__init__.py -> /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages/study1_pkg
+byte-compiling /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages/study1_pkg/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/igsp-01/ros2_3492_ws/install/study1_pkg/share/ament_index
+creating /home/igsp-01/ros2_3492_ws/install/study1_pkg/share/ament_index/resource_index
+creating /home/igsp-01/ros2_3492_ws/install/study1_pkg/share/ament_index/resource_index/packages
+copying resource/study1_pkg -> /home/igsp-01/ros2_3492_ws/install/study1_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/igsp-01/ros2_3492_ws/install/study1_pkg/share/study1_pkg
+running install_egg_info
+Copying ../../build/study1_pkg/study1_pkg.egg-info to /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages/study1_pkg-0.0.0-py3.12.egg-info
+running install_scripts
+Installing first_node script to /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/study1_pkg
+writing list of installed files to '/home/igsp-01/ros2_3492_ws/build/study1_pkg/install.log'

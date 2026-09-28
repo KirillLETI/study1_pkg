@@ -1,0 +1,2 @@
+[console_scripts]
+first_node = study1_pkg.scripts.first_node:main

@@ -1,0 +1,29 @@
+[0.419s] Invoking command in '/home/igsp-01/ros2_3492_ws/src/study1_pkg': PYTHONPATH=/home/igsp-01/ros2_3492_ws/build/study1_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/study1_pkg build --build-base /home/igsp-01/ros2_3492_ws/build/study1_pkg/build install --record /home/igsp-01/ros2_3492_ws/build/study1_pkg/install.log --install-scripts $base/lib/study1_pkg --single-version-externally-managed install_data
+[0.552s] running egg_info
+[0.561s] writing ../../build/study1_pkg/study1_pkg.egg-info/PKG-INFO
+[0.561s] writing dependency_links to ../../build/study1_pkg/study1_pkg.egg-info/dependency_links.txt
+[0.561s] writing entry points to ../../build/study1_pkg/study1_pkg.egg-info/entry_points.txt
+[0.562s] writing requirements to ../../build/study1_pkg/study1_pkg.egg-info/requires.txt
+[0.562s] writing top-level names to ../../build/study1_pkg/study1_pkg.egg-info/top_level.txt
+[0.579s] reading manifest file '../../build/study1_pkg/study1_pkg.egg-info/SOURCES.txt'
+[0.579s] writing manifest file '../../build/study1_pkg/study1_pkg.egg-info/SOURCES.txt'
+[0.579s] running build
+[0.579s] running build_py
+[0.580s] creating /home/igsp-01/ros2_3492_ws/build/study1_pkg/build/lib/study1_pkg/scripts
+[0.580s] copying study1_pkg/scripts/first_node.py -> /home/igsp-01/ros2_3492_ws/build/study1_pkg/build/lib/study1_pkg/scripts
+[0.580s] copying study1_pkg/scripts/__init__.py -> /home/igsp-01/ros2_3492_ws/build/study1_pkg/build/lib/study1_pkg/scripts
+[0.580s] running install
+[0.583s] running install_lib
+[0.592s] creating /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages/study1_pkg/scripts
+[0.592s] copying /home/igsp-01/ros2_3492_ws/build/study1_pkg/build/lib/study1_pkg/scripts/first_node.py -> /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages/study1_pkg/scripts
+[0.592s] copying /home/igsp-01/ros2_3492_ws/build/study1_pkg/build/lib/study1_pkg/scripts/__init__.py -> /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages/study1_pkg/scripts
+[0.593s] byte-compiling /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages/study1_pkg/scripts/first_node.py to first_node.cpython-312.pyc
+[0.593s] byte-compiling /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages/study1_pkg/scripts/__init__.py to __init__.cpython-312.pyc
+[0.593s] running install_data
+[0.593s] running install_egg_info
+[0.602s] removing '/home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages/study1_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[0.602s] Copying ../../build/study1_pkg/study1_pkg.egg-info to /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages/study1_pkg-0.0.0-py3.12.egg-info
+[0.603s] running install_scripts
+[0.671s] Installing first_node script to /home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/study1_pkg
+[0.672s] writing list of installed files to '/home/igsp-01/ros2_3492_ws/build/study1_pkg/install.log'
+[0.688s] Invoked command in '/home/igsp-01/ros2_3492_ws/src/study1_pkg' returned '0': PYTHONPATH=/home/igsp-01/ros2_3492_ws/build/study1_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/igsp-01/ros2_3492_ws/install/study1_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/study1_pkg build --build-base /home/igsp-01/ros2_3492_ws/build/study1_pkg/build install --record /home/igsp-01/ros2_3492_ws/build/study1_pkg/install.log --install-scripts $base/lib/study1_pkg --single-version-externally-managed install_data
