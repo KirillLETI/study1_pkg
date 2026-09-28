@@ -1,0 +1,29 @@
+[0.427s] Invoking command in '/home/igsp-01/ros2_3492_ws/src/super_Kirill1_study_pkg': PYTHONPATH=/home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/igsp-01/ros2_3492_ws/install/super_Kirill1_study_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/super_Kirill1_study_pkg build --build-base /home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/build install --record /home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/install.log --install-scripts $base/lib/super_Kirill1_study_pkg --single-version-externally-managed install_data
+[0.563s] running egg_info
+[0.572s] writing ../../build/super_Kirill1_study_pkg/super_Kirill1_study_pkg.egg-info/PKG-INFO
+[0.572s] writing dependency_links to ../../build/super_Kirill1_study_pkg/super_Kirill1_study_pkg.egg-info/dependency_links.txt
+[0.572s] writing entry points to ../../build/super_Kirill1_study_pkg/super_Kirill1_study_pkg.egg-info/entry_points.txt
+[0.572s] writing requirements to ../../build/super_Kirill1_study_pkg/super_Kirill1_study_pkg.egg-info/requires.txt
+[0.572s] writing top-level names to ../../build/super_Kirill1_study_pkg/super_Kirill1_study_pkg.egg-info/top_level.txt
+[0.589s] reading manifest file '../../build/super_Kirill1_study_pkg/super_Kirill1_study_pkg.egg-info/SOURCES.txt'
+[0.590s] writing manifest file '../../build/super_Kirill1_study_pkg/super_Kirill1_study_pkg.egg-info/SOURCES.txt'
+[0.590s] running build
+[0.590s] running build_py
+[0.590s] creating /home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/build/lib/super_Kirill1_study_pkg/scripts
+[0.590s] copying super_Kirill1_study_pkg/scripts/__init__.py -> /home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/build/lib/super_Kirill1_study_pkg/scripts
+[0.590s] copying super_Kirill1_study_pkg/scripts/second_node.py -> /home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/build/lib/super_Kirill1_study_pkg/scripts
+[0.590s] running install
+[0.594s] running install_lib
+[0.603s] creating /home/igsp-01/ros2_3492_ws/install/super_Kirill1_study_pkg/lib/python3.12/site-packages/super_Kirill1_study_pkg/scripts
+[0.603s] copying /home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/build/lib/super_Kirill1_study_pkg/scripts/__init__.py -> /home/igsp-01/ros2_3492_ws/install/super_Kirill1_study_pkg/lib/python3.12/site-packages/super_Kirill1_study_pkg/scripts
+[0.603s] copying /home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/build/lib/super_Kirill1_study_pkg/scripts/second_node.py -> /home/igsp-01/ros2_3492_ws/install/super_Kirill1_study_pkg/lib/python3.12/site-packages/super_Kirill1_study_pkg/scripts
+[0.603s] byte-compiling /home/igsp-01/ros2_3492_ws/install/super_Kirill1_study_pkg/lib/python3.12/site-packages/super_Kirill1_study_pkg/scripts/__init__.py to __init__.cpython-312.pyc
+[0.603s] byte-compiling /home/igsp-01/ros2_3492_ws/install/super_Kirill1_study_pkg/lib/python3.12/site-packages/super_Kirill1_study_pkg/scripts/second_node.py to second_node.cpython-312.pyc
+[0.603s] running install_data
+[0.604s] running install_egg_info
+[0.613s] removing '/home/igsp-01/ros2_3492_ws/install/super_Kirill1_study_pkg/lib/python3.12/site-packages/super_Kirill1_study_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[0.614s] Copying ../../build/super_Kirill1_study_pkg/super_Kirill1_study_pkg.egg-info to /home/igsp-01/ros2_3492_ws/install/super_Kirill1_study_pkg/lib/python3.12/site-packages/super_Kirill1_study_pkg-0.0.0-py3.12.egg-info
+[0.614s] running install_scripts
+[0.681s] Installing second_node script to /home/igsp-01/ros2_3492_ws/install/super_Kirill1_study_pkg/lib/super_Kirill1_study_pkg
+[0.681s] writing list of installed files to '/home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/install.log'
+[0.697s] Invoked command in '/home/igsp-01/ros2_3492_ws/src/super_Kirill1_study_pkg' returned '0': PYTHONPATH=/home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/igsp-01/ros2_3492_ws/install/super_Kirill1_study_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/super_Kirill1_study_pkg build --build-base /home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/build install --record /home/igsp-01/ros2_3492_ws/build/super_Kirill1_study_pkg/install.log --install-scripts $base/lib/super_Kirill1_study_pkg --single-version-externally-managed install_data

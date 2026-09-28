@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'second_node = super_Kirill1_study_pkg.scripts.second_node:main',
         ],
     },
 )
