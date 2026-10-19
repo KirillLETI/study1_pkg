@@ -11,7 +11,9 @@ setup.py
 resource/super_Kirill1_study_pkg
 super_Kirill1_study_pkg/__init__.py
 super_Kirill1_study_pkg/scripts/__init__.py
+super_Kirill1_study_pkg/scripts/listener.py
 super_Kirill1_study_pkg/scripts/second_node.py
+super_Kirill1_study_pkg/scripts/talker.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
