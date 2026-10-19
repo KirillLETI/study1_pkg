@@ -1,6 +1,4 @@
 # study1_pkg
-#!/usr/bin/env python3
-
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32
@@ -11,8 +9,12 @@ class EvenPublisher(Node):
     def __init__(self):
         super().__init__('even_pub')
 
-        self.publisher = self.create_publisher(
+        self.number_pub = self.create_publisher(
             Int32, 'even_numbers', 10
+        )
+
+        self.overflow_pub = self.create_publisher(
+            Int32, 'overflow', 10
         )
 
         self.counter = 0
@@ -25,13 +27,25 @@ class EvenPublisher(Node):
         msg = Int32()
         msg.data = self.counter
 
-        self.publisher.publish(msg)
+        self.number_pub.publish(msg)
 
         self.get_logger().info(
-            f'Publishing: {msg.data}'
+            f'Число: {msg.data}'
         )
 
-        self.counter = (self.counter + 2) % 100
+        self.counter += 2
+
+        if self.counter >= 100:
+            overflow_msg = Int32()
+            overflow_msg.data = self.counter
+
+            self.overflow_pub.publish(overflow_msg)
+
+            self.get_logger().warning(
+                'Счётчик достиг 100'
+            )
+
+            self.counter = 0
 
 
 def main(args=None):
