@@ -1,4 +1,6 @@
 [console_scripts]
+even_pub = super_Kirill1_study_pkg.scripts.even_number_publisher:main
 listener = super_Kirill1_study_pkg.scripts.listener:main
+overflow_listener = super_Kirill1_study_pkg.scripts.overflow_listener:main
 second_node = super_Kirill1_study_pkg.scripts.second_node:main
 talker = super_Kirill1_study_pkg.scripts.talker:main

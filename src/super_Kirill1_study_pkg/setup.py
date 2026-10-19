@@ -26,7 +26,9 @@ setup(
         'console_scripts': [
             'second_node = super_Kirill1_study_pkg.scripts.second_node:main',
             'talker = super_Kirill1_study_pkg.scripts.talker:main',
-            'listener = super_Kirill1_study_pkg.scripts.listener:main'
+            'listener = super_Kirill1_study_pkg.scripts.listener:main',
+            'even_pub = super_Kirill1_study_pkg.scripts.even_number_publisher:main',
+            'overflow_listener = super_Kirill1_study_pkg.scripts.overflow_listener:main'
         ],
     },
 )
