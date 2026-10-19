@@ -1,56 +1,36 @@
 # study1_pkg
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32
 
 
-class EvenPublisher(Node):
+class OverflowListener(Node):
 
     def __init__(self):
-        super().__init__('even_pub')
+        super().__init__('overflow_listener')
 
-        self.number_pub = self.create_publisher(
-            Int32, 'even_numbers', 10
+        self.subscription = self.create_subscription(
+            Int32,
+            'overflow',
+            self.overflow_callback,
+            10
         )
-
-        self.overflow_pub = self.create_publisher(
-            Int32, 'overflow', 10
-        )
-
-        self.counter = 0
-
-        self.timer = self.create_timer(
-            0.1, self.timer_callback
-        )
-
-    def timer_callback(self):
-        msg = Int32()
-        msg.data = self.counter
-
-        self.number_pub.publish(msg)
 
         self.get_logger().info(
-            f'Число: {msg.data}'
+            'Ожидание переполнения счётчика'
         )
 
-        self.counter += 2
-
-        if self.counter >= 100:
-            overflow_msg = Int32()
-            overflow_msg.data = self.counter
-
-            self.overflow_pub.publish(overflow_msg)
-
-            self.get_logger().warning(
-                'Счётчик достиг 100'
-            )
-
-            self.counter = 0
+    def overflow_callback(self, msg):
+        self.get_logger().warning(
+            f'!!! ПЕРЕПОЛНЕНИЕ !!! '
+            f'Получено значение: {msg.data}'
+        )
 
 
 def main(args=None):
     rclpy.init(args=args)
-    node = EvenPublisher()
+    node = OverflowListener()
 
     try:
         rclpy.spin(node)
