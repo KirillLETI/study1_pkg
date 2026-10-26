@@ -39,4 +39,4 @@ def main():
         node.destroy_node()
         rclpy.try_shutdown()
 
-    if __name__ == 'main': main()
+if __name__ == 'main': main()

@@ -8,6 +8,7 @@ setup.py
 ../../build/super_Kirill1_study_pkg/super_Kirill1_study_pkg.egg-info/requires.txt
 ../../build/super_Kirill1_study_pkg/super_Kirill1_study_pkg.egg-info/top_level.txt
 ../../build/super_Kirill1_study_pkg/super_Kirill1_study_pkg.egg-info/zip-safe
+launch/my_first_launch.py
 resource/super_Kirill1_study_pkg
 super_Kirill1_study_pkg/__init__.py
 super_Kirill1_study_pkg/scripts/__init__.py

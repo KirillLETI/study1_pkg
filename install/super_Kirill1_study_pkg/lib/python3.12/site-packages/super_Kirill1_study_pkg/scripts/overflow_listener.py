@@ -27,7 +27,7 @@ class OverflowListener(Node):
         )
 
 
-def main(args=None): 
+def main(): 
     rclpy.init() 
     node = OverflowListener()
 
@@ -39,4 +39,4 @@ def main(args=None):
         node.destroy_node()
         rclpy.try_shutdown()
 
-    if __name__ == 'main': main()
+if __name__ == 'main': main()
