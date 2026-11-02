@@ -2,20 +2,30 @@
 
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch_ros.actions import Node
 
 def generate_launch_description():
+    mode_arg = DeclareLaunchArgument(
+            'mode',           # имя аргумента
+            default_value='fast',          # значение по умолчанию
+            choices=['fast', 'slow']
+    )
+    mode = LaunchConfiguration('mode')
+    
     freq_arg = DeclareLaunchArgument(
         'publish_frequency',           # имя аргумента
-        default_value='8.0',          # значение по умолчанию
+        default_value=PythonExpression([
+            "'20.0' if '", mode, "'== 'fast' else '5.0'"
+        ]),
         description='Частота публикации чётных чисел (Гц)'
     )
 
     threshold_arg = DeclareLaunchArgument(
         'overflow_threshold',
-        default_value='80',
-        description='Порог, после которого происходит переполнение'
+        default_value=PythonExpression([
+                    "'50' if '", mode, "'== 'fast' else '150'"
+        ])
     )
     name_arg = DeclareLaunchArgument(
         'publisher_name',
@@ -26,8 +36,10 @@ def generate_launch_description():
             default_value='overflow_listener',
     )
     topic_arg = DeclareLaunchArgument(
-                'numbers_topic',
-                default_value='/even_numbers',
+        'numbers_topic',
+        default_value=PythonExpression([ 
+            "'/even_numbers_fast' if '", mode, "' == 'fast' else '/even_numbers_slow'" 
+        ])
     )
     overflow_arg = DeclareLaunchArgument(
                     'overflow_topic',
@@ -41,6 +53,7 @@ def generate_launch_description():
     topic = LaunchConfiguration('numbers_topic')
     overflow = LaunchConfiguration('overflow_topic')
     return LaunchDescription([
+        mode_arg,
         freq_arg,          # не забудь добавить аргумент сюда!
         threshold_arg,
         name_arg,
