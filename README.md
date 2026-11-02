@@ -1,3 +1,13 @@
+topic_arg = DeclareLaunchArgument(
+        'numbers_topic',
+        default_value=PythonExpression([
+            "'/even_numbers_fast' if '", mode,
+            "' == 'fast' else '/even_numbers_slow'"
+        ])
+    )
+
+
+
 # study1_pkg
 
 import rclpy
